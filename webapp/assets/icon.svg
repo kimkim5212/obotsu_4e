@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#1e3a8a"/>
+      <stop offset="100%" stop-color="#0f766e"/>
+    </linearGradient>
+  </defs>
+  <rect width="128" height="128" rx="28" fill="url(#bg)"/>
+  <!-- Damped wave curve -->
+  <path d="M 16 64 C 24 22, 34 22, 42 64 C 50 96, 60 96, 68 64 C 76 42, 86 42, 94 64 C 100 78, 106 78, 112 64"
+        fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+  <!-- Convex lens outline -->
+  <path d="M 64 20 Q 82 64 64 108 Q 46 64 64 20 Z"
+        fill="rgba(255,255,255,0.16)" stroke="#ffffff" stroke-width="3.5"/>
+  <!-- Axis line -->
+  <line x1="12" y1="64" x2="116" y2="64" stroke="rgba(255,255,255,0.45)" stroke-width="2" stroke-dasharray="4 4"/>
+</svg>

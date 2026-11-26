@@ -1,0 +1,18 @@
+{
+  "name": "応用物理B 学習ノート（第1〜6回）",
+  "short_name": "応用物理B",
+  "description": "応用物理B 第1回〜第6回の板書内容をスマートフォンで体系的に学べるWebアプリ（厳密導出・インタラクティブ図解・120問クイズ）",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#f8fafc",
+  "theme_color": "#1e3a8a",
+  "lang": "ja",
+  "icons": [
+    {
+      "src": "./assets/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

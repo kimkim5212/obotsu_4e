@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ja" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#1e3a8a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <title>応用物理B 学習ノート（第1〜6回）</title>
+  <link rel="manifest" href="./manifest.json">
+  <link rel="icon" type="image/svg+xml" href="./assets/icon.svg">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" crossorigin="anonymous">
+  <link rel="stylesheet" href="./css/style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js" crossorigin="anonymous"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/auto-render.min.js" crossorigin="anonymous"></script>
+  <!-- Curriculum & Lecture Data -->
+  <script defer src="./js/data/curriculum-map.js"></script>
+  <script defer src="./js/data/lecture1.js"></script>
+  <script defer src="./js/data/lecture2.js"></script>
+  <script defer src="./js/data/lecture3.js"></script>
+  <script defer src="./js/data/lecture4.js"></script>
+  <script defer src="./js/data/lecture5.js"></script>
+  <script defer src="./js/data/lecture6.js"></script>
+  <!-- Quiz Data (20 questions x 6 lectures = 120 questions) -->
+  <script defer src="./js/data/quiz1.js"></script>
+  <script defer src="./js/data/quiz2.js"></script>
+  <script defer src="./js/data/quiz3.js"></script>
+  <script defer src="./js/data/quiz4.js"></script>
+  <script defer src="./js/data/quiz5.js"></script>
+  <script defer src="./js/data/quiz6.js"></script>
+  <!-- Diagrams, UI Components & App Controller -->
+  <script defer src="./js/diagrams.js"></script>
+  <script defer src="./js/components.js"></script>
+  <script defer src="./js/app.js"></script>
+</head>
+<body>
+  <header class="app-header">
+    <div class="header-inner">
+      <a href="#map" class="brand" aria-label="全体マップへ戻る">
+        <span class="brand-badge">物理B</span>
+        <span class="brand-title">応用物理B 学習ノート</span>
+      </a>
+      <div class="header-actions">
+        <span id="overall-progress-pill" class="progress-pill" title="めあて・クイズ達成率">0%</span>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="ダークモード切替" title="テーマ切替">
+          <span id="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+    <nav id="lecture-pill-bar" class="lecture-pill-bar" aria-label="講義回選択" hidden></nav>
+  </header>
+
+  <main id="app-main" class="app-main" tabindex="-1">
+    <div class="loading-state">読み込み中...</div>
+  </main>
+
+  <div id="return-banner" class="return-banner" hidden>
+    <button id="return-banner-btn" type="button" class="return-banner-btn">
+      ← 元の箇所に戻る
+    </button>
+    <button id="return-banner-close" type="button" class="return-banner-close" aria-label="閉じる">✕</button>
+  </div>
+
+  <nav class="bottom-nav" aria-label="メインナビゲーション">
+    <a href="#map" class="nav-item" data-tab="map">
+      <span class="nav-icon" aria-hidden="true">🗺️</span>
+      <span class="nav-label">全体マップ</span>
+    </a>
+    <a href="#lecture/1" class="nav-item" data-tab="lecture">
+      <span class="nav-icon" aria-hidden="true">📖</span>
+      <span class="nav-label">講義ノート</span>
+    </a>
+    <a href="#quiz/1" class="nav-item" data-tab="quiz">
+      <span class="nav-icon" aria-hidden="true">✏️</span>
+      <span class="nav-label">クイズ</span>
+    </a>
+    <a href="#formulas" class="nav-item" data-tab="formulas">
+      <span class="nav-icon" aria-hidden="true">📐</span>
+      <span class="nav-label">公式索引</span>
+    </a>
+  </nav>
+</body>
+</html>
